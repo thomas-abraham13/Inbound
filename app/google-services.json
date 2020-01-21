@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "275086472934",
+    "firebase_url": "https://inboundlogin.firebaseio.com",
+    "project_id": "inboundlogin",
+    "storage_bucket": "inboundlogin.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:275086472934:android:2508215b4261018d81ed27",
+        "android_client_info": {
+          "package_name": "com.example.inboundlogin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "275086472934-j5embrp80pd4bjngqmcr2aq344gksrjc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.inboundlogin",
+            "certificate_hash": "7d5fde71e0995e875b1173863ed32af168813fbe"
+          }
+        },
+        {
+          "client_id": "275086472934-d305bvp7vh4d6jpkf3c0v8ff2ml2bctd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDYZe4eq_DrCdZlupA7QhMqr46PCaHJJAU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "275086472934-hm1jrj7qffp0bt4snsk7unjfukhd4uvc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

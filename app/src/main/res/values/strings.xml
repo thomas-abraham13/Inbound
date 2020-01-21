@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">InboundLogin</string>
+    <string name="title_activity_team_registration">TeamRegistration</string>
+    <string name="enteruser">Enter Username</string>
+    <string name="enterpass">Enter Password</string>
+    <string name="confpass">Confirm Password</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
