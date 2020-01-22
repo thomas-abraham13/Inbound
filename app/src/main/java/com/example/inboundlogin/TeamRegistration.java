@@ -28,8 +28,8 @@ public class TeamRegistration extends AppCompatActivity {
         Button scorekeeper=(Button) findViewById(R.id.btnscore);
         next.setOnClickListener(v -> {
             if( team.getText().toString().length() == 0 || playerno.getText().toString().length()==0) {
-                team.setError("Team name is required!");
-                playerno.setError("Number of players is required!");
+                team.setError("Please Enter Team Name");
+                playerno.setError("Please Enter Number of Players");
             }
              else {
                 Intent i = new Intent(this, PlayerInfo.class);
