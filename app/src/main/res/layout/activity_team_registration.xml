@@ -13,7 +13,7 @@
         android:id="@+id/TeamName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:hint="Team Name"
+        android:hint="@string/teamname"
         android:inputType="text"
         android:textSize="15sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -27,7 +27,7 @@
         android:id="@+id/CoachName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:hint="Coach's Name"
+        android:hint="@string/coachname"
         android:inputType="text"
         android:textSize="15sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -41,7 +41,8 @@
         android:id="@+id/PlayerNo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:hint="Number of Players"
+        android:hint="@string/playerno"
+        android:inputType="number"
         android:textSize="15sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -55,7 +56,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="15sp"
-        android:text="Next"
+        android:text="@string/next"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.350"
@@ -68,7 +69,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="15sp"
-        android:text="Cancel"
+        android:text="@string/cancel"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.650"
@@ -80,7 +81,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="10sp"
-        android:text="Scorekeeper"
+        android:text="@string/scorekeeper"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.05"
@@ -90,5 +91,3 @@
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
-
-    <!-- android:inputType="number" -->
