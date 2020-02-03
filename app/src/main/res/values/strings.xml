@@ -21,6 +21,13 @@
     <string name="next">Next</string>
     <string name="cancel">Cancel</string>
     <string name="scorekeeper">Scorekeeper</string>
+    <string name="login">Login</string>
+    <string name="signup">Signup</string>
+    <string name="alreadyhaveaccount">Already have an account?</string>
+    <string name="done">Done</string>
+    <string name="ighandle">Instagram Handle</string>
+    <string name="name">Name</string>
+    <string name="number">Number</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
