@@ -16,7 +16,7 @@
     <string name="username">Username</string>
     <string name="password">Password</string>
     <string name="teamname">Team Name</string>
-    <string name="coachname">Coachs Name</string>
+    <string name="coachname">Coach\'s Name</string>
     <string name="playerno">Number of Players</string>
     <string name="next">Next</string>
     <string name="cancel">Cancel</string>
