@@ -16,7 +16,7 @@
     <string name="username">Username</string>
     <string name="password">Password</string>
     <string name="teamname">Team Name</string>
-    <string name="coachname">Coach's Name</string>
+    <string name="coachname">Coachs Name</string>
     <string name="playerno">Number of Players</string>
     <string name="next">Next</string>
     <string name="cancel">Cancel</string>
@@ -28,6 +28,9 @@
     <string name="ighandle">Instagram Handle</string>
     <string name="name">Name</string>
     <string name="number">Number</string>
+    <string name="addplayer">Add Player</string>
+    <string name="finish">Finish</string>
+    <string name="playerdetails">Player Details</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
