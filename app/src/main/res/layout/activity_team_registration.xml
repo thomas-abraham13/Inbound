@@ -13,7 +13,7 @@
         android:id="@+id/TeamName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:autofillHints=""
+        android:autofillHints="Please Enter a Team Name"
         android:hint="@string/teamname"
         android:inputType="text"
         android:textSize="15sp"
