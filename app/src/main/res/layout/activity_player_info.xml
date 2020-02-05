@@ -9,8 +9,8 @@
 
     <Button
         android:id="@+id/btnadd"
-        android:layout_width="152dp"
-        android:layout_height="64dp"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
         android:backgroundTint="#f79123"
         android:fontFamily="@font/comfortaa"
         android:text="@string/addplayer"
@@ -29,8 +29,8 @@
 
     <Button
         android:id="@+id/btnfinish"
-        android:layout_width="146dp"
-        android:layout_height="56dp"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
         android:backgroundTint="#f79123"
         android:fontFamily="@font/comfortaa"
         android:text="@string/finish"
