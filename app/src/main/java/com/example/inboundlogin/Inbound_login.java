@@ -43,6 +43,8 @@ public class Inbound_login extends AppCompatActivity {
         cancel.setOnClickListener((view) -> {
             Intent j = new Intent(this, MainActivity.class);
             startActivity(j);
+
+            Toast.makeText(this, "Login Cancelled", Toast.LENGTH_SHORT).show();
         });
 
     }

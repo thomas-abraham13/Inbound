@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#BCFFFFFF"
+    android:foregroundTint="#858589"
     tools:context=".MainActivity">
 
     <Button
@@ -12,6 +13,8 @@
         android:layout_width="144dp"
         android:layout_height="54dp"
         android:backgroundTint="#F79123"
+        android:fontFamily="@font/comfortaa"
+        android:foregroundTint="#858489"
         android:text="@string/signup"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -25,6 +28,8 @@
         android:layout_width="143dp"
         android:layout_height="51dp"
         android:backgroundTint="#F79123"
+        android:fontFamily="@font/comfortaa"
+        android:foregroundTint="#858589"
         android:text="@string/login"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -43,9 +48,9 @@
         android:textColorHighlight="#000000"
         android:textColorHint="#000000"
         android:textColorLink="#000000"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.601" />
@@ -54,6 +59,7 @@
         android:id="@+id/imageView7"
         android:layout_width="254dp"
         android:layout_height="161dp"
+        android:contentDescription="@string/logo"
         android:src="@drawable/inboundlogo"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -61,26 +67,5 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.208" />
-
-    <ImageView
-        android:id="@+id/imageView5"
-        android:layout_width="696dp"
-        android:layout_height="72dp"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/orangebanner" />
-
-    <ImageView
-        android:id="@+id/imageView10"
-        android:layout_width="696dp"
-        android:layout_height="72dp"
-        android:layout_marginBottom="664dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/orangebanner" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

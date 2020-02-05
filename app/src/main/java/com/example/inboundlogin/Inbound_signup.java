@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
@@ -38,6 +39,8 @@ public class Inbound_signup extends AppCompatActivity {
         cancel.setOnClickListener((view) -> {
             Intent j = new Intent(this, MainActivity.class);
             startActivity(j);
+
+            Toast.makeText(this, "Signup Cancelled", Toast.LENGTH_SHORT).show();
         });
     }
 

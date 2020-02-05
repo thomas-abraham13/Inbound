@@ -20,7 +20,6 @@
             android:name=".TeamRegistration"
             android:label="@string/title_activity_team_registration"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".signup" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
