@@ -43,9 +43,9 @@
         android:textColorHighlight="#000000"
         android:textColorHint="#000000"
         android:textColorLink="#000000"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.601" />
@@ -66,9 +66,9 @@
         android:id="@+id/imageView5"
         android:layout_width="696dp"
         android:layout_height="72dp"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/orangebanner" />
 
