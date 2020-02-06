@@ -57,7 +57,7 @@ public class Inbound_login extends AppCompatActivity {
                     Users user = userSnapshot.getValue(Users.class);
 
                     if(uname.equals(user.getEmailid())&& upassword.equals(user.getPass())){
-                        Intent i = new Intent(Inbound_login.this, TeamRegistration.class);
+                        Intent i = new Intent(Inbound_login.this, HomePage.class);
                         startActivity(i);
                     }
                     else{

@@ -33,6 +33,10 @@
     <string name="playerdetails">Player Details</string>
     <string name="back">Back</string>
     <string name="logo">LOGO</string>
+    <string name="teamregis">Team Registration</string>
+    <string name="condition">Conditioning</string>
+    <string name="bdrills">Basketball Drills</string>
+    <string name="logout">Logout</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
