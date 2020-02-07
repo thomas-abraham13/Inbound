@@ -3,6 +3,7 @@ package com.example.inboundlogin;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentTransaction;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -10,6 +11,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.FrameLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -30,7 +32,6 @@ public class PlayerInfo extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_player_info);
         Button addPlayer = (Button) findViewById(R.id.btnadd);
-        Button finish=(Button) findViewById(R.id.btnfinish);
         final FrameLayout f = (FrameLayout) findViewById(R.id.frameLayout);
             EditText name1 = (EditText) findViewById(R.id.Name1);
             EditText number1 = (EditText) findViewById(R.id.number1);
@@ -160,6 +161,14 @@ public class PlayerInfo extends AppCompatActivity {
             fragmentTransaction.addToBackStack(null);
             fragmentTransaction.commit();
         });
+
+            Button finish = (Button) findViewById(R.id.btnfinish);
+            finish.setOnClickListener((view) -> {
+                Intent j = new Intent(this, HomePage.class);
+                startActivity(j);
+
+                Toast.makeText(this, "Team Registration Complete", Toast.LENGTH_SHORT).show();
+            });
         }
 
     public void basicReadWrite() {

@@ -25,6 +25,7 @@ public class PlayerInfoAdd extends Fragment {
         EditText number=(EditText)getView().findViewById(R.id.Player_Number);
         EditText IGid=(EditText)getView().findViewById(R.id.Player_id);
         Button done=(Button)getView().findViewById(R.id.btndone);
+
         done.setOnClickListener(v ->{
             PlayerInfo.Tname[PlayerInfo.count]=name.getText().toString();
             PlayerInfo.Tid[PlayerInfo.count]=IGid.getText().toString();

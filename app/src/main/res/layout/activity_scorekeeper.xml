@@ -85,6 +85,7 @@
         app:layout_constraintVertical_bias="0.112" />
 
     <EditText
+        android:id="@+id/quarternumber"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/comfortaa"
@@ -94,6 +95,7 @@
         android:textColorLink="#000000"
         android:textSize="20sp"
         android:textStyle="bold"
+        android:inputType="number"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.667"
@@ -125,7 +127,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/comfortaa"
-        android:inputType="text"
         android:text="@string/team2"
         android:textColor="#000000"
         android:textColorHighlight="#000000"
@@ -145,7 +146,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/comfortaa"
-        android:inputType="text"
         android:text="@string/team1"
         android:textColor="#000000"
         android:textColorHighlight="#000000"

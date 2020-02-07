@@ -10,6 +10,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 public class TeamRegistration extends AppCompatActivity {
 
@@ -31,7 +32,7 @@ public class TeamRegistration extends AppCompatActivity {
         team=(EditText) findViewById(R.id.TeamName);
         coach=(EditText) findViewById(R.id.CoachName);
         playerno=(EditText) findViewById(R.id.PlayerNo);
-        scorekeeper=(Button) findViewById(R.id.btnscore);
+
         databaseTeams = FirebaseDatabase.getInstance().getReference("teams");
         next.setOnClickListener(v -> {
             if( team.getText().toString().length() == 0 || playerno.getText().toString().length()==0) {
@@ -46,12 +47,10 @@ public class TeamRegistration extends AppCompatActivity {
             }
         });
         cancel.setOnClickListener(v-> {
-            Intent i = new Intent(this, MainActivity.class);
+            Intent i = new Intent(this, HomePage.class);
             startActivity(i);
-        });
-        scorekeeper.setOnClickListener(v-> {
-            Intent j = new Intent(this, Scorekeeper.class);
-            startActivity(j);
+
+            Toast.makeText(this, "Team Registration Cancelled", Toast.LENGTH_SHORT).show();
         });
 
     }
