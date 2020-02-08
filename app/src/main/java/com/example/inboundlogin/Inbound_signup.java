@@ -15,6 +15,7 @@ public class Inbound_signup extends AppCompatActivity {
 
     private EditText username;
     private EditText password;
+    private EditText confirm;
 
     DatabaseReference databaseUsers;
 
@@ -25,14 +26,21 @@ public class Inbound_signup extends AppCompatActivity {
 
         username = findViewById(R.id.username);
         password = findViewById(R.id.password);
+        confirm=findViewById(R.id.confpass);
 
         databaseUsers= FirebaseDatabase.getInstance().getReference("user");
 
         Button next = (Button) findViewById(R.id.button5);
         next.setOnClickListener((view) -> {
-            writeNewUser();
-            Intent i = new Intent(this, Inbound_login.class);
-            startActivity(i);
+            if(confirm.getText().toString().equals(password.getText().toString())) {
+                writeNewUser();
+                Intent i = new Intent(this, Inbound_login.class);
+                startActivity(i);
+            }
+            else
+            {
+                confirm.setError("Passwords do not match");
+            }
         });
 
         Button cancel = (Button) findViewById(R.id.button6);
