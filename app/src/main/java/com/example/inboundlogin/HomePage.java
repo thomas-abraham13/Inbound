@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.Toast;
 
 public class HomePage extends AppCompatActivity {
@@ -26,12 +27,11 @@ public class HomePage extends AppCompatActivity {
             startActivity(i);
         });
 
-        Button logout = (Button) findViewById(R.id.logout);
-        logout.setOnClickListener((view) -> {
-            Intent j = new Intent(this, MainActivity.class);
-            startActivity(j);
-
-            Toast.makeText(this, "User Successfully Logged Out", Toast.LENGTH_SHORT).show();
+        ImageButton setting = (ImageButton) findViewById(R.id.settings);
+        setting.setOnClickListener((view) -> {
+            Intent i = new Intent(this, Settings.class);
+            startActivity(i);
         });
+
     }
 }
