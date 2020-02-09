@@ -49,18 +49,26 @@ public class Inbound_login extends AppCompatActivity {
 
     }
 
-    private void Authenticate(final String uname, final String upassword) {
-        databaseUsers.addValueEventListener(new ValueEventListener() {
+    private void Authenticate(final String uname, final String upassword)
+    {
+        databaseUsers.addValueEventListener(new ValueEventListener()
+        {
             @Override
-            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                for(DataSnapshot userSnapshot: dataSnapshot.getChildren()){
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot)
+            {
+                for(DataSnapshot userSnapshot: dataSnapshot.getChildren())
+                {
                     Users user = userSnapshot.getValue(Users.class);
 
-                    if(uname.equals(user.getEmailid())&& upassword.equals(user.getPass())){
+                    if(uname.equals(user.getEmailid())&& upassword.equals(user.getPass()))
+                    {
                         Intent i = new Intent(Inbound_login.this, HomePage.class);
                         startActivity(i);
+
+                        Toast.makeText(Inbound_login.this, "User Successfully Logged In", Toast.LENGTH_SHORT).show();
                     }
-                    else{
+                    else
+                    {
                         Toast.makeText(Inbound_login.this, "Username or Password is Incorrect", Toast.LENGTH_SHORT).show();
                     }
                 }
