@@ -21,5 +21,11 @@ public class Settings extends AppCompatActivity {
 
             Toast.makeText(this, "User Successfully Logged Out", Toast.LENGTH_SHORT).show();
         });
+
+        Button userprofile = (Button) findViewById(R.id.profile);
+        userprofile.setOnClickListener((view) -> {
+            Intent j = new Intent(this, UserProfile.class);
+            startActivity(j);
+        });
     }
 }

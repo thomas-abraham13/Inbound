@@ -12,9 +12,10 @@
         android:layout_width="190dp"
         android:layout_height="300dp"
         android:background="@drawable/scoreboard"
+        android:fontFamily="@font/comfortaa"
         android:gravity="bottom|center"
         android:paddingBottom="90dp"
-        android:text="Scoreboard"
+        android:text="@string/scorekeeper"
         android:textAlignment="gravity"
         android:textSize="15sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -29,6 +30,7 @@
         android:layout_width="170dp"
         android:layout_height="300dp"
         android:background="@drawable/drill"
+        android:fontFamily="@font/comfortaa"
         android:gravity="bottom|center"
         android:text="@string/bdrills"
         android:textSize="15sp"
@@ -44,6 +46,7 @@
         android:layout_width="190dp"
         android:layout_height="300dp"
         android:background="@drawable/registration"
+        android:fontFamily="@font/comfortaa"
         android:gravity="center"
         android:paddingLeft="12dp"
         android:text="@string/teamregis"
@@ -60,6 +63,7 @@
         android:layout_width="170dp"
         android:layout_height="300dp"
         android:background="@drawable/bargraph"
+        android:fontFamily="@font/comfortaa"
         android:gravity="bottom|center"
         android:text="@string/playerstats"
         android:textSize="15sp"
@@ -82,7 +86,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.01"
-        app:srcCompat="#00FF8800" />
+        app:srcCompat="@color/colorAccent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
