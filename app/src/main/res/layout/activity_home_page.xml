@@ -4,16 +4,22 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#00FFFFFF"
     tools:context=".HomePage">
 
     <Button
         android:id="@+id/scorekeeper"
-        android:layout_width="170dp"
+        android:layout_width="190dp"
         android:layout_height="300dp"
-        android:text="@string/scorekeeper"
+        android:background="@drawable/scoreboard"
+        android:gravity="bottom|center"
+        android:paddingBottom="90dp"
+        android:text="Scoreboard"
+        android:textAlignment="gravity"
+        android:textSize="15sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.933"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.18" />
@@ -22,7 +28,10 @@
         android:id="@+id/bdrills"
         android:layout_width="170dp"
         android:layout_height="300dp"
+        android:background="@drawable/drill"
+        android:gravity="bottom|center"
         android:text="@string/bdrills"
+        android:textSize="15sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.933"
@@ -32,9 +41,13 @@
 
     <Button
         android:id="@+id/teamregis"
-        android:layout_width="170dp"
+        android:layout_width="190dp"
         android:layout_height="300dp"
+        android:background="@drawable/registration"
+        android:gravity="center"
+        android:paddingLeft="12dp"
         android:text="@string/teamregis"
+        android:textSize="10sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.095"
@@ -46,7 +59,10 @@
         android:id="@+id/playstats"
         android:layout_width="170dp"
         android:layout_height="300dp"
+        android:background="@drawable/bargraph"
+        android:gravity="bottom|center"
         android:text="@string/playerstats"
+        android:textSize="15sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.095"
@@ -58,6 +74,7 @@
         android:id="@+id/settings"
         android:layout_width="50dp"
         android:layout_height="50dp"
+        android:background="@android:drawable/ic_menu_preferences"
         android:contentDescription="@string/logo"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -65,7 +82,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.01"
-        app:srcCompat="@android:color/holo_orange_dark" />
+        app:srcCompat="#00FF8800" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
