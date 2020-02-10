@@ -43,10 +43,10 @@
         app:layout_constraintVertical_bias="0.18" />
 
     <Button
-        android:id="@+id/condition"
+        android:id="@+id/playstats"
         android:layout_width="170dp"
         android:layout_height="300dp"
-        android:text="@string/condition"
+        android:text="@string/playerstats"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.095"

@@ -33,5 +33,11 @@ public class HomePage extends AppCompatActivity {
             startActivity(i);
         });
 
+        Button bballdrill = (Button) findViewById(R.id.bdrills);
+        bballdrill.setOnClickListener((view) -> {
+            Intent j = new Intent(this, Bballdrills.class);
+            startActivity(j);
+        });
+
     }
 }
