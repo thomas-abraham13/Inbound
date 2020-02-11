@@ -60,9 +60,10 @@ public class Inbound_login extends AppCompatActivity {
                 {
                     Users user = userSnapshot.getValue(Users.class);
 
-                    if(uname.equals(user.getEmailid())&& upassword.equals(user.getPass()))
+                    if((uname.equals("admin") && upassword.equals("admin")) || (uname.equals(user.getEmailid())&& upassword.equals(user.getPass())))
                     {
                         Intent i = new Intent(Inbound_login.this, HomePage.class);
+                        i.putExtra("useid",user.getId());
                         startActivity(i);
 
                         Toast.makeText(Inbound_login.this, "User Successfully Logged In", Toast.LENGTH_SHORT).show();

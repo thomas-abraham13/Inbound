@@ -15,6 +15,8 @@ public class HomePage extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home_page);
 
+        String id = getIntent().getStringExtra("useid");
+
         Button teamregis = (Button) findViewById(R.id.teamregis);
         teamregis.setOnClickListener((view) -> {
             Intent i = new Intent(this, TeamRegistration.class);
@@ -30,6 +32,7 @@ public class HomePage extends AppCompatActivity {
         ImageButton setting = (ImageButton) findViewById(R.id.settings);
         setting.setOnClickListener((view) -> {
             Intent i = new Intent(this, Settings.class);
+            i.putExtra("useid",id);
             startActivity(i);
         });
 

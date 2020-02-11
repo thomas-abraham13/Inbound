@@ -14,6 +14,8 @@ public class Settings extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_settings);
 
+        String id = getIntent().getStringExtra("useid");
+
         Button logout = (Button) findViewById(R.id.logout);
         logout.setOnClickListener((view) -> {
             Intent j = new Intent(this, MainActivity.class);
@@ -25,6 +27,7 @@ public class Settings extends AppCompatActivity {
         Button userprofile = (Button) findViewById(R.id.profile);
         userprofile.setOnClickListener((view) -> {
             Intent j = new Intent(this, UserProfile.class);
+            j.putExtra("useid",id);
             startActivity(j);
         });
     }
