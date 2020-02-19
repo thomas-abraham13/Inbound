@@ -4,6 +4,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintLayout;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.transition.TransitionManager;
 import android.view.View;
@@ -61,6 +62,9 @@ public class UserProfile extends AppCompatActivity {
         update.setOnClickListener((view) -> {
             checkData(id);
             Toast.makeText(this, "User Details Updated", Toast.LENGTH_SHORT).show();
+
+            Intent i = new Intent(this, HomePage.class);
+            startActivity(i);
         });
 
     }
@@ -87,14 +91,13 @@ public class UserProfile extends AppCompatActivity {
         });
     }
 
-
     private void checkData(final  String useid){
         databaseUsers.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 Users user = dataSnapshot.getValue(Users.class);
 
-                if (pass.getText().toString().matches(user.getPass()) && (!nam.getText().toString().matches(user.getFullname()) || !usernam.getText().toString().matches((user.getEmailid()))))
+                if (pass.getText().toString().matches(user.getPass()))
                 {
                     updateData(useid);
                 }
