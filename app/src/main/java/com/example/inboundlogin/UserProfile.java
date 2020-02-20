@@ -60,11 +60,16 @@ public class UserProfile extends AppCompatActivity {
 
         Button update = (Button) findViewById(R.id.update);
         update.setOnClickListener((view) -> {
-            checkData(id);
-            Toast.makeText(this, "User Details Updated", Toast.LENGTH_SHORT).show();
-
-            Intent i = new Intent(this, HomePage.class);
-            startActivity(i);
+            if(confpass.getText().toString().equals(newpass.getText().toString())) {
+                checkData(id);
+                Toast.makeText(this, "User Details Updated", Toast.LENGTH_SHORT).show();
+                Intent i = new Intent(this, Inbound_login.class);
+                startActivity(i);
+            }
+            else
+            {
+                confpass.setError("Passwords Do Not Match");
+            }
         });
 
     }
@@ -100,6 +105,10 @@ public class UserProfile extends AppCompatActivity {
                 if (pass.getText().toString().matches(user.getPass()))
                 {
                     updateData(useid);
+                }
+                else
+                {
+                    pass.setError("Original Password Incorrect");
                 }
             }
 
