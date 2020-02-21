@@ -21,7 +21,6 @@ public class TeamRegistration extends AppCompatActivity {
     private EditText playerno;
     private Button next;
     private Button cancel;
-    private Button scorekeeper;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

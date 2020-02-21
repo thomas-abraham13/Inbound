@@ -8,6 +8,7 @@
       <w>btnupdate</w>
       <w>cbpassword</w>
       <w>changepass</w>
+      <w>coachn</w>
       <w>coachname</w>
       <w>comfortaa</w>
       <w>confirmpassword</w>
@@ -20,11 +21,13 @@
       <w>inboundlogo</w>
       <w>newpass</w>
       <w>newpassword</w>
+      <w>nplay</w>
       <w>oldpass</w>
       <w>oldpassword</w>
       <w>playerdetails</w>
       <w>playerno</w>
       <w>playerstats</w>
+      <w>teamn</w>
       <w>teamname</w>
       <w>teamregis</w>
       <w>timestart</w>
