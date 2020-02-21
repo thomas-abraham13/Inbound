@@ -51,6 +51,7 @@ public class UserProfile extends AppCompatActivity {
 
         changepass.setOnClickListener(v -> {
             TransitionManager.beginDelayedTransition(userprofile);
+            pass.setVisibility(View.VISIBLE);
             btnupdate.setVisibility(View.VISIBLE);
             newpass.setVisibility(View.VISIBLE);
             confpass.setVisibility(View.VISIBLE);
@@ -58,8 +59,8 @@ public class UserProfile extends AppCompatActivity {
         });
         getData(id);
 
-        Button update = (Button) findViewById(R.id.update);
-        update.setOnClickListener((view) -> {
+        //Button update = (Button) findViewById(R.id.update);
+        btnupdate.setOnClickListener((view) -> {
             if(confpass.getText().toString().equals(newpass.getText().toString())) {
                 checkData(id);
                 Toast.makeText(this, "User Details Updated", Toast.LENGTH_SHORT).show();
@@ -78,12 +79,13 @@ public class UserProfile extends AppCompatActivity {
         databaseUsers.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+
                 Users user = dataSnapshot.getValue(Users.class);
 
                 if(user.getId().matches(useid))
                 {
                     usernam.setText(user.getEmailid());
-                    pass.setText(user.getPass());
+                    //pass.setText(user.getPass());
                     nam.setText(user.getFullname());
                 }
 

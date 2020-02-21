@@ -41,6 +41,10 @@
     <string name="copyright">© Created by Arjun Joshua and Thomas Abraham</string>
     <string name="userprofile">User Profile</string>
     <string name="playerstats">Player Statistics</string>
+    <string name="newpass">New Password</string>
+    <string name="oldpass">Old Password</string>
+    <string name="update">Update</string>
+    <string name="changepass">Change Password</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>

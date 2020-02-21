@@ -29,12 +29,14 @@
         android:fontFamily="@font/comfortaa"
         android:hint="@string/name"
         android:inputType="textPersonName"
+        android:autofillHints="@string/name"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.369" />
+        app:layout_constraintVertical_bias="0.369"
+        tools:targetApi="o" />
 
     <EditText
         android:id="@+id/newpassword"
@@ -42,15 +44,17 @@
         android:layout_height="55dp"
         android:ems="10"
         android:fontFamily="@font/comfortaa"
-        android:hint="New Password"
+        android:hint="@string/newpass"
         android:inputType="textPassword"
         android:visibility="invisible"
+        android:autofillHints="@string/newpass"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.644" />
+        app:layout_constraintVertical_bias="0.644"
+        tools:targetApi="o"/>
 
     <Button
         android:id="@+id/update"
@@ -58,7 +62,7 @@
         android:layout_height="60dp"
         android:backgroundTint="#F79123"
         android:fontFamily="@font/comfortaa"
-        android:text="Update"
+        android:text="@string/update"
         android:textColor="#000000"
         android:textColorHighlight="#000000"
         android:textColorHint="#000000"
@@ -75,16 +79,19 @@
         android:id="@+id/oldpassword"
         android:layout_width="230dp"
         android:layout_height="55dp"
+        android:autofillHints="@string/oldpass"
         android:ems="10"
         android:fontFamily="@font/comfortaa"
-        android:hint="@string/password"
+        android:hint="@string/oldpass"
         android:inputType="textPassword"
+        android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.545" />
+        app:layout_constraintVertical_bias="0.545"
+        tools:targetApi="o" />
 
     <Button
         android:id="@+id/cbpassword"
@@ -92,7 +99,7 @@
         android:layout_height="60dp"
         android:backgroundTint="#F79123"
         android:fontFamily="@font/comfortaa"
-        android:text="Change Password"
+        android:text="@string/changepass"
         android:textColor="#000000"
         android:textColorHighlight="#000000"
         android:textColorHint="#000000"
@@ -102,7 +109,7 @@
         app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.682" />
+        app:layout_constraintVertical_bias="0.631" />
 
     <EditText
         android:id="@+id/confirmpassword"
@@ -110,15 +117,17 @@
         android:layout_height="55dp"
         android:ems="10"
         android:fontFamily="@font/comfortaa"
-        android:hint="Confirm Password"
+        android:hint="@string/confpass"
         android:inputType="textPassword"
         android:visibility="invisible"
+        android:autofillHints="@string/confpass"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.736" />
+        app:layout_constraintVertical_bias="0.736"
+        tools:targetApi="o" />
 
     <EditText
         android:id="@+id/username"
@@ -128,18 +137,21 @@
         android:fontFamily="@font/comfortaa"
         android:hint="@string/username"
         android:inputType="textPersonName"
+        android:autofillHints="@string/username"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.452" />
+        app:layout_constraintVertical_bias="0.452"
+        tools:targetApi="o" />
 
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="250dp"
         android:layout_height="160dp"
+        android:contentDescription="@string/logo"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"

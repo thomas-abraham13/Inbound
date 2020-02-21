@@ -1,8 +1,36 @@
 <component name="ProjectDictionaryState">
   <dictionary name="thomas">
     <words>
+      <w>addplayer</w>
+      <w>alreadyhaveaccount</w>
       <w>arjun</w>
+      <w>bdrills</w>
+      <w>btnupdate</w>
+      <w>cbpassword</w>
+      <w>changepass</w>
+      <w>coachname</w>
+      <w>comfortaa</w>
+      <w>confirmpassword</w>
+      <w>confpass</w>
+      <w>enterfullname</w>
+      <w>enterpass</w>
+      <w>enteruser</w>
       <w>funame</w>
+      <w>ighandle</w>
+      <w>inboundlogo</w>
+      <w>newpass</w>
+      <w>newpassword</w>
+      <w>oldpass</w>
+      <w>oldpassword</w>
+      <w>playerdetails</w>
+      <w>playerno</w>
+      <w>playerstats</w>
+      <w>teamname</w>
+      <w>teamregis</w>
+      <w>timestart</w>
+      <w>useid</w>
+      <w>usernam</w>
+      <w>userprofile</w>
     </words>
   </dictionary>
 </component>
