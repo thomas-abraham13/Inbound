@@ -13,9 +13,11 @@
       <w>comfortaa</w>
       <w>confirmpassword</w>
       <w>confpass</w>
+      <w>emailid</w>
       <w>enterfullname</w>
       <w>enterpass</w>
       <w>enteruser</w>
+      <w>fullname</w>
       <w>funame</w>
       <w>ighandle</w>
       <w>inboundlogo</w>
@@ -24,11 +26,16 @@
       <w>nplay</w>
       <w>oldpass</w>
       <w>oldpassword</w>
+      <w>pinstagram</w>
       <w>playerdetails</w>
       <w>playerno</w>
       <w>playerstats</w>
+      <w>pname</w>
+      <w>pnumber</w>
+      <w>pteam</w>
       <w>teamn</w>
       <w>teamname</w>
+      <w>teamp</w>
       <w>teamregis</w>
       <w>timestart</w>
       <w>useid</w>

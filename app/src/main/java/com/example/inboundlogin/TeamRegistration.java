@@ -41,6 +41,7 @@ public class TeamRegistration extends AppCompatActivity {
              else {
                  writeNewTeam();
                 Intent i = new Intent(this, PlayerInfo.class);
+                i.putExtra("teamname",team.getText().toString());
                 //i.putExtra("Player number", playerno.getText());
                 startActivity(i);
             }

@@ -21,6 +21,10 @@ import com.google.firebase.database.ValueEventListener;
 
 public class PlayerInfo extends AppCompatActivity {
 
+    DatabaseReference databasePlayers;
+
+    String pteam = getIntent().getStringExtra("teamname");
+
     private static final String TAG = "MainActivity";
 
     public static String[] Tname = new String[12];
@@ -31,6 +35,9 @@ public class PlayerInfo extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_player_info);
+
+        databasePlayers = FirebaseDatabase.getInstance().getReference("players");
+
         Button addPlayer = (Button) findViewById(R.id.btnadd);
         final FrameLayout f = (FrameLayout) findViewById(R.id.frameLayout);
             EditText name1 = (EditText) findViewById(R.id.Name1);
@@ -167,8 +174,30 @@ public class PlayerInfo extends AppCompatActivity {
                 Intent j = new Intent(this, HomePage.class);
                 startActivity(j);
 
+                for(int i=0; i<count; i++)
+                {
+                    writeNewPlayer(i);
+                }
+
                 Toast.makeText(this, "Team Registration Complete", Toast.LENGTH_SHORT).show();
+
+                Tname=null;
+                Tnumber=null;
+                Tid=null;
             });
+        }
+
+        private void writeNewPlayer(int j){
+            String pname=Tname[j];
+            String teamp=pteam;
+            String pnumber=Tnumber[j];
+            String pinstagram=Tid[j];
+            String id=databasePlayers.push().getKey();
+
+            Players obj = new Players(pname,pteam,pnumber,pinstagram,id);
+
+            databasePlayers.child(id).setValue(obj);
+
         }
 
 }

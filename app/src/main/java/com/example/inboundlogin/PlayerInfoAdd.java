@@ -30,7 +30,7 @@ public class PlayerInfoAdd extends Fragment {
             PlayerInfo.Tname[PlayerInfo.count]=name.getText().toString();
             PlayerInfo.Tid[PlayerInfo.count]=IGid.getText().toString();
             PlayerInfo.Tnumber[PlayerInfo.count]=number.getText().toString();
-        getActivity().onBackPressed();
+            getActivity().onBackPressed();
         });
-    }
+        }
     }
