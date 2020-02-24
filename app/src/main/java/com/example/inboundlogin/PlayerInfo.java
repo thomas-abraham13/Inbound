@@ -194,7 +194,7 @@ public class PlayerInfo extends AppCompatActivity {
             String pinstagram=Tid[j];
             String id=databasePlayers.push().getKey();
 
-            Players obj = new Players(pname,pteam,pnumber,pinstagram,id);
+            Players obj = new Players(pname,teamp,pnumber,pinstagram,id);
 
             databasePlayers.child(id).setValue(obj);
 
