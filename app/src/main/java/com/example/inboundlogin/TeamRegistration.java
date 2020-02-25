@@ -34,12 +34,13 @@ public class TeamRegistration extends AppCompatActivity {
 
         databaseTeams = FirebaseDatabase.getInstance().getReference("teams");
         next.setOnClickListener(v -> {
-            if( team.getText().toString().length() == 0 || playerno.getText().toString().length()==0) {
+            if( team.getText().toString().length() == 0 || playerno.getText().toString().length()==0)
+            {
                 team.setError("Please Enter Team Name");
                 playerno.setError("Please Enter Number of Players");
             }
              else {
-                 writeNewTeam();
+               //  writeNewTeam();
                 Intent i = new Intent(this, PlayerInfo.class);
                 i.putExtra("teamname",team.getText().toString());
                 //i.putExtra("Player number", playerno.getText());
@@ -55,7 +56,7 @@ public class TeamRegistration extends AppCompatActivity {
 
     }
 
-    private void writeNewTeam(){
+   /* private void writeNewTeam(){
         String teamn = team.getText().toString();
         String coachn = coach.getText().toString();
         String nplay = playerno.getText().toString();
@@ -65,5 +66,5 @@ public class TeamRegistration extends AppCompatActivity {
 
         databaseTeams.child(id).setValue(team);
     }
-
+    */
 }

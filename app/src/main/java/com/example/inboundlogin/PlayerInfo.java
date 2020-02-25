@@ -21,9 +21,9 @@ import com.google.firebase.database.ValueEventListener;
 
 public class PlayerInfo extends AppCompatActivity {
 
-    DatabaseReference databasePlayers;
+    //DatabaseReference databasePlayers;
 
-    String pteam = getIntent().getStringExtra("teamname");
+    //String pteam = getIntent().getStringExtra("teamname");
 
     private static final String TAG = "MainActivity";
 
@@ -31,52 +31,53 @@ public class PlayerInfo extends AppCompatActivity {
     public static String[] Tnumber = new String[12];
     public static String[] Tid = new String[12];
     static int count = 0;
-        @Override
+
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_player_info);
 
-        databasePlayers = FirebaseDatabase.getInstance().getReference("players");
+        //databasePlayers = FirebaseDatabase.getInstance().getReference("players");
 
         Button addPlayer = (Button) findViewById(R.id.btnadd);
         final FrameLayout f = (FrameLayout) findViewById(R.id.frameLayout);
-            EditText name1 = (EditText) findViewById(R.id.Name1);
-            EditText number1 = (EditText) findViewById(R.id.number1);
-            EditText id1 = (EditText) findViewById(R.id.id1);
-            EditText name2 = (EditText) findViewById(R.id.Name2);
-            EditText number2 = (EditText) findViewById(R.id.number2);
-            EditText id2 = (EditText) findViewById(R.id.id2);
-            EditText name3 = (EditText) findViewById(R.id.Name3);
-            EditText number3 = (EditText) findViewById(R.id.number3);
-            EditText id3 = (EditText) findViewById(R.id.id3);
-            EditText name4 = (EditText) findViewById(R.id.Name4);
-            EditText number4 = (EditText) findViewById(R.id.number4);
-            EditText id4 = (EditText) findViewById(R.id.id4);
-            EditText name5 = (EditText) findViewById(R.id.Name5);
-            EditText number5 = (EditText) findViewById(R.id.number5);
-            EditText id5 = (EditText) findViewById(R.id.id5);
-            EditText name6 = (EditText) findViewById(R.id.Name6);
-            EditText number6 = (EditText) findViewById(R.id.number6);
-            EditText id6 = (EditText) findViewById(R.id.id6);
-            EditText name7 = (EditText) findViewById(R.id.Name7);
-            EditText number7 = (EditText) findViewById(R.id.number7);
-            EditText id7 = (EditText) findViewById(R.id.id7);
-            EditText name8 = (EditText) findViewById(R.id.Name8);
-            EditText number8 = (EditText) findViewById(R.id.number8);
-            EditText id8 = (EditText) findViewById(R.id.id8);
-            EditText name9 = (EditText) findViewById(R.id.Name9);
-            EditText number9 = (EditText) findViewById(R.id.number9);
-            EditText id9 = (EditText) findViewById(R.id.id9);
-            EditText name10 = (EditText) findViewById(R.id.Name10);
-            EditText number10 = (EditText) findViewById(R.id.number10);
-            EditText id10 = (EditText) findViewById(R.id.id10);
-            EditText name11 = (EditText) findViewById(R.id.Name11);
-            EditText number11 = (EditText) findViewById(R.id.number11);
-            EditText id11 = (EditText) findViewById(R.id.id11);
-            EditText name12 = (EditText) findViewById(R.id.Name12);
-            EditText number12 = (EditText) findViewById(R.id.number12);
-            EditText id12 = (EditText) findViewById(R.id.id12);
-            addPlayer.setOnClickListener((view) -> {
+        EditText name1 = (EditText) findViewById(R.id.Name1);
+        EditText number1 = (EditText) findViewById(R.id.number1);
+        EditText id1 = (EditText) findViewById(R.id.id1);
+        EditText name2 = (EditText) findViewById(R.id.Name2);
+        EditText number2 = (EditText) findViewById(R.id.number2);
+        EditText id2 = (EditText) findViewById(R.id.id2);
+        EditText name3 = (EditText) findViewById(R.id.Name3);
+        EditText number3 = (EditText) findViewById(R.id.number3);
+        EditText id3 = (EditText) findViewById(R.id.id3);
+        EditText name4 = (EditText) findViewById(R.id.Name4);
+        EditText number4 = (EditText) findViewById(R.id.number4);
+        EditText id4 = (EditText) findViewById(R.id.id4);
+        EditText name5 = (EditText) findViewById(R.id.Name5);
+        EditText number5 = (EditText) findViewById(R.id.number5);
+        EditText id5 = (EditText) findViewById(R.id.id5);
+        EditText name6 = (EditText) findViewById(R.id.Name6);
+        EditText number6 = (EditText) findViewById(R.id.number6);
+        EditText id6 = (EditText) findViewById(R.id.id6);
+        EditText name7 = (EditText) findViewById(R.id.Name7);
+        EditText number7 = (EditText) findViewById(R.id.number7);
+        EditText id7 = (EditText) findViewById(R.id.id7);
+        EditText name8 = (EditText) findViewById(R.id.Name8);
+        EditText number8 = (EditText) findViewById(R.id.number8);
+        EditText id8 = (EditText) findViewById(R.id.id8);
+        EditText name9 = (EditText) findViewById(R.id.Name9);
+        EditText number9 = (EditText) findViewById(R.id.number9);
+        EditText id9 = (EditText) findViewById(R.id.id9);
+        EditText name10 = (EditText) findViewById(R.id.Name10);
+        EditText number10 = (EditText) findViewById(R.id.number10);
+        EditText id10 = (EditText) findViewById(R.id.id10);
+        EditText name11 = (EditText) findViewById(R.id.Name11);
+        EditText number11 = (EditText) findViewById(R.id.number11);
+        EditText id11 = (EditText) findViewById(R.id.id11);
+        EditText name12 = (EditText) findViewById(R.id.Name12);
+        EditText number12 = (EditText) findViewById(R.id.number12);
+        EditText id12 = (EditText) findViewById(R.id.id12);
+        addPlayer.setOnClickListener((view) -> {
             if (count == 1) {
                 name1.setText(Tname[count]);
                 number1.setText(Tnumber[count]);
@@ -169,12 +170,12 @@ public class PlayerInfo extends AppCompatActivity {
             fragmentTransaction.commit();
         });
 
-            Button finish = (Button) findViewById(R.id.btnfinish);
-            finish.setOnClickListener((view) -> {
-                Intent j = new Intent(this, HomePage.class);
-                startActivity(j);
+        Button finish = (Button) findViewById(R.id.btnfinish);
+        finish.setOnClickListener((view) -> {
+            Intent j = new Intent(this, HomePage.class);
+            startActivity(j);
 
-                for(int i=0; i<count; i++)
+                /*for(int i=0; i<count; i++)
                 {
                     writeNewPlayer(i);
                 }
@@ -185,9 +186,10 @@ public class PlayerInfo extends AppCompatActivity {
                 Tnumber=null;
                 Tid=null;
             });
-        }
+        */
+        });
 
-        private void writeNewPlayer(int j){
+        /*private void writeNewPlayer(int j){
             String pname=Tname[j];
             String teamp=pteam;
             String pnumber=Tnumber[j];
@@ -199,5 +201,6 @@ public class PlayerInfo extends AppCompatActivity {
             databasePlayers.child(id).setValue(obj);
 
         }
-
+*/
+    }
 }

@@ -47,6 +47,12 @@ public class Inbound_login extends AppCompatActivity {
             Toast.makeText(this, "Login Cancelled", Toast.LENGTH_SHORT).show();
         });
 
+        Button test = (Button) findViewById(R.id.test);
+        test.setOnClickListener((view) -> {
+            Intent j = new Intent(this, PlayerInfo.class);
+            startActivity(j);
+        });
+
     }
 
     private void Authenticate(final String uname, final String upassword)

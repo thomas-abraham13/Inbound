@@ -2,6 +2,9 @@
   <dictionary name="christ">
     <words>
       <w>inboundlogin</w>
+      <w>playerid</w>
+      <w>uname</w>
+      <w>upassword</w>
     </words>
   </dictionary>
 </component>
