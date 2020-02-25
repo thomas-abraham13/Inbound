@@ -12,7 +12,8 @@
         android:roundIcon="@drawable/bballiconapp"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".PlayerStats"></activity>
+        <activity android:name=".ProfileActivity"></activity>
+        <activity android:name=".PlayerStats" />
         <activity android:name=".UserProfile" />
         <activity android:name=".Bballdrills" />
         <activity android:name=".Settings" />
