@@ -110,7 +110,7 @@ public class Inbound_login extends AppCompatActivity {
         if (mAuth.getCurrentUser() != null) {
             finish();
 
-            startActivity(new Intent(this, ProfileActivity.class));
+            startActivity(new Intent(this, HomePage.class));
 
             Toast.makeText(this, "User Already Signed In", Toast.LENGTH_SHORT).show();
         }
