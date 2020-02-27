@@ -106,11 +106,11 @@ public class Inbound_login extends AppCompatActivity {
 
         //if the user is already signed in
         //we will close this activity
-        //and take the user to profile activity
+        //and take the user to home page
         if (mAuth.getCurrentUser() != null) {
             finish();
 
-            startActivity(new Intent(this, HomePage.class));
+            startActivity(new Intent(this, ProfileActivity.class));
 
             Toast.makeText(this, "User Already Signed In", Toast.LENGTH_SHORT).show();
         }
