@@ -21,7 +21,7 @@ import com.google.firebase.database.ValueEventListener;
 
 public class PlayerInfo extends AppCompatActivity {
 
-    //DatabaseReference databasePlayers;
+    DatabaseReference databasePlayers;
 
     //String pteam = getIntent().getStringExtra("teamname");
 
@@ -37,7 +37,7 @@ public class PlayerInfo extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_player_info);
 
-        //databasePlayers = FirebaseDatabase.getInstance().getReference("players");
+        databasePlayers = FirebaseDatabase.getInstance().getReference("players");
 
         Button addPlayer = (Button) findViewById(R.id.btnadd);
         final FrameLayout f = (FrameLayout) findViewById(R.id.frameLayout);
@@ -175,7 +175,7 @@ public class PlayerInfo extends AppCompatActivity {
             Intent j = new Intent(this, HomePage.class);
             startActivity(j);
 
-                /*for(int i=0; i<count; i++)
+                for(int i=0; i<count; i++)
                 {
                     writeNewPlayer(i);
                 }
@@ -186,21 +186,17 @@ public class PlayerInfo extends AppCompatActivity {
                 Tnumber=null;
                 Tid=null;
             });
-        */
-        });
 
-        /*private void writeNewPlayer(int j){
-            String pname=Tname[j];
-            String teamp=pteam;
-            String pnumber=Tnumber[j];
-            String pinstagram=Tid[j];
-            String id=databasePlayers.push().getKey();
+    }
 
-            Players obj = new Players(pname,teamp,pnumber,pinstagram,id);
+    private void writeNewPlayer(int i) {
+        String pname=Tname[i];
+        String pnumber=Tnumber[i];
+        String pinstagram=Tid[i];
+        String id=databasePlayers.push().getKey();
 
-            databasePlayers.child(id).setValue(obj);
+        Players obj = new Players(pname,pnumber,pinstagram,id);
 
-        }
-*/
+        databasePlayers.child(id).setValue(obj);
     }
 }
