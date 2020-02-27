@@ -35,7 +35,7 @@ public class Inbound_login extends AppCompatActivity {
     private static final int RC_SIGN_IN = 234;
 
     //Tag for the logs optional
-    private static final String TAG = "simplifiedcoding";
+    private static final String TAG = "inbound";
 
     //creating a GoogleSignInClient object
     GoogleSignInClient mGoogleSignInClient;
@@ -71,7 +71,8 @@ public class Inbound_login extends AppCompatActivity {
         //google sign in intent
         findViewById(R.id.sign_in_button).setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
+            public void onClick(View view)
+            {
                 signIn();
             }
         });
@@ -96,11 +97,6 @@ public class Inbound_login extends AppCompatActivity {
             Toast.makeText(this, "Login Cancelled", Toast.LENGTH_SHORT).show();
         });
 
-        Button test = (Button) findViewById(R.id.test);
-        test.setOnClickListener((view) -> {
-            Intent j = new Intent(this, PlayerInfo.class);
-            startActivity(j);
-        });
 
     }
 
@@ -113,7 +109,10 @@ public class Inbound_login extends AppCompatActivity {
         //and take the user to profile activity
         if (mAuth.getCurrentUser() != null) {
             finish();
-            startActivity(new Intent(this, ProfileActivity.class));
+
+            startActivity(new Intent(this, HomePage.class));
+
+            Toast.makeText(this, "User Already Signed In", Toast.LENGTH_SHORT).show();
         }
     }
 
