@@ -56,7 +56,7 @@ public class TeamRegistration extends AppCompatActivity {
 
     }
 
-    private void writeNewTeam(){
+    private void writeNewTeam(){    //Firebase Database
         String teamn = team.getText().toString();
         String coachn = coach.getText().toString();
         String nplay = playerno.getText().toString();

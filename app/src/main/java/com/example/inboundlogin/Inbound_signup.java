@@ -54,7 +54,7 @@ public class Inbound_signup extends AppCompatActivity {
         });
     }
 
-    private void writeNewUser() {
+    private void writeNewUser() {   //Firebase Function
         String email = username.getText().toString();
         String pass = password.getText().toString();
         String funame = fname.getText().toString();
