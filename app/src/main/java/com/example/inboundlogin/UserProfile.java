@@ -120,6 +120,7 @@ public class UserProfile extends AppCompatActivity {
             }
         });
     }
+
     private void updateData(final String useid){
 
         String username = usernam.getText().toString();
