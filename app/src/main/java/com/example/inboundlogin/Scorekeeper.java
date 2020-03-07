@@ -44,7 +44,7 @@ public class Scorekeeper extends AppCompatActivity {
 
         databaseScore= FirebaseDatabase.getInstance().getReference("score");
 
-        writeScore();
+        //writeScore();
 
         scoreid = getIntent().getStringExtra("scoreid");
 
@@ -108,6 +108,7 @@ public class Scorekeeper extends AppCompatActivity {
                     pauseTimer();
                 } else {
                     startTimer();
+                    writeScore();
                 }
             }
         });
