@@ -115,8 +115,8 @@
 
     <TextView
         android:id="@+id/title"
-        android:layout_width="354dp"
-        android:layout_height="112dp"
+        android:layout_width="350dp"
+        android:layout_height="115dp"
         android:fontFamily="@font/comfortaa"
         android:text="@string/livescoreboard"
         android:textAlignment="center"
