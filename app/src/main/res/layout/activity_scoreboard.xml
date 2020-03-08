@@ -7,6 +7,22 @@
     tools:context=".Scoreboard">
 
     <TextView
+        android:id="@+id/secs"
+        android:layout_width="93dp"
+        android:layout_height="83dp"
+        android:background="#E90C0B0B"
+        android:text="00"
+        android:textColor="#EEF71010"
+        android:textSize="60sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.729"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.14" />
+
+    <TextView
         android:id="@+id/team1score"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -33,20 +49,20 @@
         app:layout_constraintVertical_bias="0.566" />
 
     <TextView
-        android:id="@+id/clock"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/mins"
+        android:layout_width="93dp"
+        android:layout_height="83dp"
         android:background="#E90C0B0B"
-        android:text="10:00"
+        android:text="10"
         android:textColor="#EEF71010"
         android:textSize="60sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.535"
+        app:layout_constraintHorizontal_bias="0.339"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.149" />
+        app:layout_constraintVertical_bias="0.14" />
 
     <TextView
         android:id="@+id/nameteam1"

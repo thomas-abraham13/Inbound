@@ -43,7 +43,7 @@ public class HomePage extends AppCompatActivity {
 
         Button playstats = (Button) findViewById(R.id.playstats);
         playstats.setOnClickListener((view) -> {
-            Intent j = new Intent(this, PlayerStats.class);
+            Intent j = new Intent(this, Scoreboard.class);
             startActivity(j);
         });
 
