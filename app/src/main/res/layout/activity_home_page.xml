@@ -86,7 +86,7 @@ android:gravity="center"-->
         android:foregroundTint="#F79123"
         android:foregroundTintMode="add"
         android:gravity="center"
-        android:text="Live Scoreboard"
+        android:text="@string/livescoreboard"
         android:textColor="#000000"
         android:textColorHighlight="#000000"
         android:textColorHint="#000000"
@@ -101,17 +101,18 @@ android:gravity="center"-->
 
     <ImageButton
         android:id="@+id/settings"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:background="@android:drawable/ic_menu_preferences"
+        android:layout_width="62dp"
+        android:layout_height="57dp"
+        android:backgroundTint="#FFFFFF"
         android:contentDescription="@string/logo"
+        android:src="@drawable/chooseone"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.958"
+        app:layout_constraintHorizontal_bias="0.95"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.01"
-        tools:srcCompat="@drawable/setings" />
+        app:layout_constraintVertical_bias="0.023"
+        tools:src="@drawable/chooseone" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
