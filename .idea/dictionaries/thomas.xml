@@ -23,6 +23,7 @@
       <w>funame</w>
       <w>ighandle</w>
       <w>inboundlogo</w>
+      <w>livescoreboard</w>
       <w>mins</w>
       <w>newpass</w>
       <w>newpassword</w>
@@ -33,6 +34,7 @@
       <w>playerdetails</w>
       <w>playerno</w>
       <w>playerstats</w>
+      <w>playstats</w>
       <w>pname</w>
       <w>pnumber</w>
       <w>pteam</w>
@@ -49,6 +51,7 @@
       <w>useid</w>
       <w>usernam</w>
       <w>userprofile</w>
+      <w>zerozero</w>
     </words>
   </dictionary>
 </component>
