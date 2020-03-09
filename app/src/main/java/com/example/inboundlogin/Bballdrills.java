@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.content.IntentSender;
 import android.os.Bundle;
 import android.util.Log;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.common.ConnectionResult;
@@ -31,6 +32,7 @@ public class Bballdrills extends AppCompatActivity implements OnDataPointListene
         GoogleApiClient.ConnectionCallbacks,
         GoogleApiClient.OnConnectionFailedListener{
 
+    private TextView steps1;
     private static final int REQUEST_OAUTH = 1;
     private static final String AUTH_PENDING = "auth_state_pending";
     private boolean authInProgress = false;
@@ -40,6 +42,8 @@ public class Bballdrills extends AppCompatActivity implements OnDataPointListene
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bballdrills);
+
+        steps1=findViewById(R.id.steps);
 
         if (savedInstanceState != null) {
             authInProgress = savedInstanceState.getBoolean(AUTH_PENDING);
@@ -157,12 +161,14 @@ public class Bballdrills extends AppCompatActivity implements OnDataPointListene
 
     @Override
     public void onDataPoint(DataPoint dataPoint) {
-        for( final Field field : dataPoint.getDataType().getFields() ) {
+        for( final Field field : dataPoint.getDataType().getFields() )
+        {
             final Value value = dataPoint.getValue( field );
             runOnUiThread(new Runnable() {
                 @Override
                 public void run() {
-                    Toast.makeText(getApplicationContext(), "Field: " + field.getName() + " Value: " + value, Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(), "Field : "+  field.getName() + " Value : " + value, Toast.LENGTH_SHORT).show();
+                    steps1.setText(value.toString());
                 }
             });
         }

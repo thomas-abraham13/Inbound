@@ -101,8 +101,8 @@ android:gravity="center"-->
 
     <ImageButton
         android:id="@+id/settings"
-        android:layout_width="62dp"
-        android:layout_height="57dp"
+        android:layout_width="53dp"
+        android:layout_height="58dp"
         android:backgroundTint="#FFFFFF"
         android:contentDescription="@string/logo"
         android:src="@drawable/chooseone"
