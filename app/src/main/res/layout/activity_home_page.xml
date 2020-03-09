@@ -4,16 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#00FFFFFF"
+    android:background="#FFFFFF"
     tools:context=".HomePage">
 
     <Button
         android:id="@+id/scorekeeper"
         android:layout_width="150dp"
         android:layout_height="290dp"
-        android:backgroundTint="#F79123"
+        android:background="@drawable/tr"
         android:fontFamily="@font/comfortaa"
-        android:foregroundTint="#F79123"
         android:foregroundTintMode="add"
         android:gravity="center"
         android:paddingBottom="90dp"
@@ -35,9 +34,8 @@
         android:id="@+id/bdrills"
         android:layout_width="150dp"
         android:layout_height="290dp"
-        android:backgroundTint="#F79123"
+        android:background="@drawable/dr"
         android:fontFamily="@font/comfortaa"
-        android:foregroundTint="#F79123"
         android:foregroundTintMode="add"
         android:gravity="center"
         android:text="@string/conditioning"
@@ -57,7 +55,7 @@
         android:id="@+id/teamregis"
         android:layout_width="150dp"
         android:layout_height="290dp"
-        android:backgroundTint="#F79123"
+        android:background="@drawable/tl"
         android:fontFamily="@font/comfortaa"
         android:foregroundTint="#F79123"
         android:foregroundTintMode="add"
@@ -74,16 +72,15 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.18" />
-<!--android:paddingLeft="12dp"
+    <!--android:paddingLeft="12dp"
 android:gravity="center"-->
 
     <Button
         android:id="@+id/playstats"
         android:layout_width="150dp"
         android:layout_height="290dp"
-        android:backgroundTint="#F79123"
+        android:background="@drawable/dl"
         android:fontFamily="@font/comfortaa"
-        android:foregroundTint="#F79123"
         android:foregroundTintMode="add"
         android:gravity="center"
         android:text="@string/livescoreboard"
@@ -105,14 +102,14 @@ android:gravity="center"-->
         android:layout_height="58dp"
         android:backgroundTint="#FFFFFF"
         android:contentDescription="@string/logo"
-        android:src="@drawable/chooseone"
+        android:src="@android:drawable/ic_menu_preferences"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.95"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.023"
-        tools:src="@drawable/chooseone" />
+        tools:src="@android:drawable/ic_menu_preferences" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
