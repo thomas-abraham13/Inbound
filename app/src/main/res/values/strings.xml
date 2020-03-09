@@ -13,6 +13,7 @@
     <string name="plus2">+2</string>
     <string name="plus3">+3</string>
     <string name="timestart">00:00</string>
+    <string name="sixseveneight">678</string>
     <string name="username">Username</string>
     <string name="password">Password</string>
     <string name="teamname">Team Name</string>
@@ -50,6 +51,8 @@
     <string name="livescoreboard">Live Scoreboard</string>
     <string name="conditioning">Conditioning</string>
     <string name="bballdrillsabout">There are multiple basic basketball drills that must be mastered in order to make an effective contribution on the court. The most essential drills are : \n\n -> Layups \n -> Field Goal Shooting \n -> Standard Defensive Tactics</string>
+    <string name="stepstaken">Steps Taken</string>
+    <string name="calsburnt">Cals. Burnt</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
