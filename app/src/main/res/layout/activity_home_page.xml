@@ -40,7 +40,7 @@
         android:foregroundTint="#F79123"
         android:foregroundTintMode="add"
         android:gravity="center"
-        android:text="@string/bdrills"
+        android:text="@string/conditioning"
         android:textColor="#000000"
         android:textColorHighlight="#000000"
         android:textColorHint="#000000"
